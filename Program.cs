@@ -8,8 +8,8 @@ string GetPlaybackStreamUrl()
     var contentPath = $"live/VC02.stream";
     var queryParamPrefix = "wowzatoken";
     var playbackClientIP = "10.1.2.151";
-    var startTime = new DateTimeOffset(DateTime.Now.AddSeconds(5)).ToUnixTimeSeconds();
-    var endTime = new DateTimeOffset(DateTime.Now.AddSeconds(120)).ToUnixTimeSeconds();
+    var startTime = 0;
+    var endTime = new DateTimeOffset(DateTime.Now.AddSeconds(15)).ToUnixTimeSeconds();
     var customParams = $"VC01";
     var sharedSecret = "7757dac1e7754623";
 
