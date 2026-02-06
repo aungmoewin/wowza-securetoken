@@ -32,10 +32,10 @@ string GetPlaybackStreamUrl()
     return streamUrl;
 }
 
-static string ComputeSha256Hash(string rawData)
+static string ComputeSha256Hash(string queryParams)
 {
     // Create a SHA256   
-    var bytes = Encoding.UTF8.GetBytes(rawData);
+    var bytes = Encoding.UTF8.GetBytes(queryParams);
     using (var sha256 = System.Security.Cryptography.SHA256.Create())
     {
         var hash = sha256.ComputeHash(bytes);
